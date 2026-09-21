@@ -16,14 +16,14 @@ void swapByValue(int a, int b) {
 
 int main() {
     int x = 5, y = 10;
-    cout << "Before function call: x = " << x << ", y = " << y << std::endl;
-    cout << "Before function call (Address ): &x = " << &x << ", &y = " << &y << std::endl;
+    cout << "Before function call: x = " << x << ", y = " << y << std::endl; //5 10 
+    cout << "Before function call (Address ): &x = " << &x << ", &y = " << &y << std::endl; // 01d 01c
 
     // Call the function to swap values by value
     swapByValue(x, y);
 
-    cout << "After function call: x = " << x << ", y = " << y << std::endl;
-    cout << "After function call: &x = " << &x << ", &y = " << &y << std::endl;
+    cout << "After function call: x = " << x << ", y = " << y << std::endl;  //10 5
+    cout << "After function call: &x = " << &x << ", &y = " << &y << std::endl;   // 01d   01c
     return 0;
 }
 

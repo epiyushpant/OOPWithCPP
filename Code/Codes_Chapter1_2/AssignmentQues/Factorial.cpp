@@ -1,18 +1,18 @@
-#include <iostream>
+// #include <iostream>
 
-int main() {
-    int n, factorial = 1;
+// int main() {
+//     int n, factorial = 1;
 
-    std::cout << "Enter a number: ";
-    std::cin >> n;
+//     std::cout << "Enter a number: ";
+//     std::cin >> n;
 
-    for (int i = 1; i <= n; i++) {
-        factorial *= i;  // Multiply each number to get the factorial
-    }
+//     for (int i = 1; i <= n; i++) {
+//         factorial *= i;  // Multiply each number to get the factorial
+//     }
 
-    std::cout << "Factorial of " << n << " is: " << factorial << "\n";
-    return 0;
-}
+//     std::cout << "Factorial of " << n << " is: " << factorial << "\n";
+//     return 0;
+// }
 
 
 

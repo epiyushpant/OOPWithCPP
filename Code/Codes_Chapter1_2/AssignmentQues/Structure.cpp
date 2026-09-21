@@ -1,29 +1,29 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-// Define a struct named 'Person'
-struct Person {
-    string name;
-    int age;
-    double height;
-};
+// // Define a struct named 'Person'
+// struct Person {
+//     string name;
+//     int age;
+//     double height;
+// };
 
-int main() {
-    // Create an instance of Person
-    Person p1;
+// int main() {
+//     // Create an instance of Person
+//     Person p1;
 
-    // Assign values to the members
-    p1.name = "Alice";
-    p1.age = 30;
-    p1.height = 5.5;
+//     // Assign values to the members
+//     p1.name = "Alice";
+//     p1.age = 30;
+//     p1.height = 5.5;
 
-    // Access and print the values
-    cout << "Name: " << p1.name << endl;
-    cout << "Age: " << p1.age << endl;
-    cout << "Height: " << p1.height << " feet" << endl;
+//     // Access and print the values
+//     cout << "Name: " << p1.name << endl;
+//     cout << "Age: " << p1.age << endl;
+//     cout << "Height: " << p1.height << " feet" << endl;
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 /* 
@@ -43,3 +43,22 @@ To improve readability and maintainability of code.
 Often used in collections, like arrays of structures.
 
 */ 
+#include<iostream>
+using namespace std;
+
+    struct student{
+        string name;
+        
+    };
+    int main(){
+student arr[3];
+for(int i=0;i<3;i++){
+cout<<"enter name"<<(i+1);
+cin>>arr[i].name;
+
+}
+for(int i=0;i<3;i++){
+    cout<<"The name is:"<<arr[i].name<<endl;
+}
+
+    }

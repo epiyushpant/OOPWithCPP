@@ -1,22 +1,23 @@
 #include <iostream>
 using namespace std;
-// int x = 5;  // Global variable​
-// int& give() {
-//     return x;  // Returning reference to global variable  , return address​
+int x = 5;  // Global variable​
+int& give() {
+    return x;  // Returning reference to global variable  , return address​
 
-// }
-
-// int main() {
-//     give() = 100;  // Changes x directly​
-//     cout << x;     // Output: 100​
-//     return 0;
-// }
-int x=5;
-int& give(){
-    return x;
 }
-int main(){
-    give()=100;
-    cout<<x;
+
+int main() {
+    give() = 100;  // Changes x directly​
+    cout << x;     // Output: 100​
     return 0;
 }
+// int x=5;
+// int& give(){
+//     return x;
+// }
+// int main(){
+//     give()=100;
+//     cout<<x;
+//     return 0;
+// }
+// 

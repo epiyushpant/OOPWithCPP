@@ -16,11 +16,12 @@ int main() {
 
 
 int main() {
-  for (int i = 0; i < 10; i++) {
-    if (i == 4) {
-      break;; // Skip the rest of the loop when i is 4 (continues to the next iteration)
+  
+  for (int i = 1; i < 10; i++) {
+    if (i%2!=0) {
+      continue; // Skip the rest of the loop when i is 4 (continues to the next iteration)
     }
-    cout << i << "\n";
+    cout <<"Even number" <<i << "\n";
   } 
   return 0;
 }

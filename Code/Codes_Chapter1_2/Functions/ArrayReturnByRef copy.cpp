@@ -1,31 +1,31 @@
-/* calculatea area of rectangle, square,  circle  using function overloading */
+// /* calculatea area of rectangle, square,  circle  using function overloading */
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
 
-void  CalcaulteArea(float  length, float breadth) {
-    float area = length * breadth;
-    cout << "Area of rectangle is: " << area << endl;
-}
+// void  CalcaulteArea(float  length, float breadth) {
+//     float area = length * breadth;
+//     cout << "Area of rectangle is: " << area << endl;
+// }
 
-void CalcaulteArea(float side) {
-    float area = side * side;
-    cout << "Area of square is: " << area << endl;
-}
+// void CalcaulteArea(float side) {
+//     float area = side * side;
+//     cout << "Area of square is: " << area << endl;
+// }
 
-void CalcaulteArea(float radius, bool isCircle) {
-    if (isCircle) {
-        float area = 3.14 * radius * radius;
-        cout << "Area of circle is: " << area << endl;
-    }
-}
-int main() { 
-    CalcaulteArea(5.0f, 10.0f); // Rectangle
-    CalcaulteArea(4.0f); // Square
-    CalcaulteArea(3.0f, true); // Circle
-    return 0;
-}
+// void CalcaulteArea(float radius, bool isCircle) {
+//     if (isCircle) {
+//         float area = 3.14 * radius * radius;
+//         cout << "Area of circle is: " << area << endl;
+//     }
+// }
+// int main() { 
+//     CalcaulteArea(5.121f, 10.0f); // Rectangle
+//     CalcaulteArea(4.0f); // Square
+//     CalcaulteArea(3.0f, true); // Circle
+//     return 0;
+// }
 
 // #include<iostream>
 // using namespace std;
@@ -50,3 +50,33 @@ int main() {
 //     Calcarea(10.0f);
 //     return 0;
 // }
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     char name[20];
+//     cout<<"Enter name";
+// cin.get(name,20,'$');  //get(char, count, delim) 
+//     cout<<"You entered name is "<<name;
+//     return 0;
+// }
+
+
+//Dynamic memory allocation
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int n;
+    cout<<"How many integers you have: ";
+    cin>>n;
+    int *p = new int[n];
+
+    cout<<"Enter"<<n<<"Integer:";
+    for(int i=0;i<n;i++)
+    cin>>p[i];
+    for(int i=0;i<n;i++)
+    cout<<p[i]<<setw(5);
+}

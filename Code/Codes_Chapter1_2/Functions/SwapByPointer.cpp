@@ -22,18 +22,19 @@
 
 
 
-#include<iostream>
-using namespace std;
-void usepointer(int *a,int *b){
-    int temp;
-    temp = *a;
-    *a = *b;
-    *b =temp;
-    cout<<"The pointer value of a"<<*a<<"The pointer value of B: "<<*b<<endl;
-}
-int main(){
-    int x=5,y=10;
-    usepointer(&x,&y);
-    cout << "After function call: x = " << x << ", y = " << y << endl;
+// #include<iostream>
+// using namespace std;
+// void usepointer(int *a,int *b){
+//     int temp;
+//     temp = *a;
+//     *a = *b;
+//     *b =temp;
+//     cout<<"The pointer value of a"<<*a<<"The pointer value of B: "<<*b<<endl;
+// }
+// int main(){
+//     int x=5,y=10;
+//     usepointer(&x,&y);
+//     cout << "After function call: x = " << x << ", y = " << y << endl;
 
-}
+// }
+

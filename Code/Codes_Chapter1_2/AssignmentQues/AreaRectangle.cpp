@@ -15,30 +15,17 @@ int main() {
 
 
 
-/* 
-int main() {
-    float principal, time, rate;
-    float SimpleInterest; 
-
-    cout << "Enter prinicpal amount : ";
-    cin >> principal; 
-
-    cout << "Enter time : ";
-    cin >> time;
-
-    cout << "Enter rate : ";
-    cin >> rate;
-
-    SimpleInterest  = principal * time * rate ;
-
-    cout << "Simple Interest is " << SimpleInterest;
-    return 0;
-}
-
- */
-
-
-
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int area, length, breadh;
+//     cout<<"Enter Length"<<endl;
+//     cin>>length;
+//     cout<<"Enter Breadth"<<endl;
+//     cin>>breadh;
+//     area= length*breadh;
+//     cout<<"The area of rectangle is "<<area;
+// }
 
 
 
