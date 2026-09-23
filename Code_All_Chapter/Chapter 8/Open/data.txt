@@ -1,0 +1,2 @@
+Hello C++
+This is written in one file.

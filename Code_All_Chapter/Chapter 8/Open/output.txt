@@ -1,0 +1,2 @@
+I learned file handling write mode
+I added second line . 
