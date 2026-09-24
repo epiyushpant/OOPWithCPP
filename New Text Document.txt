@@ -27,3 +27,10 @@ git remote add origin https://github.com/dipakthakuri07/OOP_With_Cpp.git
 git push -u origin main
 
 
+
+git status
+git init
+git add .
+git remote add origin https://github.com/<your-username>/Dipakchand.git
+git branch -M main
+git push -u origin main
