@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 
+/*
 int main() {
     ofstream outFile;
     outFile.open("data.txt", ios::out);
@@ -34,3 +35,40 @@ int main() {
 
     return 0;
 }
+*/
+
+int main() {
+    fstream file;
+    file.open("data.txt", ios::in | ios::out | ios::trunc);
+
+    if (!file) {
+        cout << "Error opening file for reading and writing!" << endl;
+        return 1;
+    }
+
+    file << "Hello C++\n";
+    file << "This is written in one file.\n";
+    file.flush();
+    file.seekg(0);
+
+    string line;
+    cout << "File contents:\n";
+    while (getline(file, line)) {
+        cout << line << endl;
+    }
+
+    file.close();
+
+    return 0;
+}
+
+/*
+
+Here it is important because the program switches from writing to reading:
+
+
+flush() finishes sending the written data to the file.
+seekg(0) moves the reading position back to the beginning.
+flush() does not close the file; the same fstream remains available for reading and writing.
+
+*/
