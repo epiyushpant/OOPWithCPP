@@ -1,0 +1,87 @@
+| Mode          | Meaning                                | When to use                                                        |
+| ------------- | -------------------------------------- | ------------------------------------------------------------------ |
+| `ios::in`     | Read from file                         | When you only need to read existing data                           |
+| `ios::out`    | Write to file                          | When you want to write data, usually replacing old content         |
+| `ios::app`    | Append                                 | When you want to add new data at the end without deleting old data |
+| `ios::ate`    | Open and move pointer to end initially | When you want access to the whole file but start at the end        |
+| `ios::trunc`  | Delete existing content                | When you explicitly want to clear the file before writing          |
+| `ios::binary` | Binary mode                            | For images, videos, `.dat` files, structures, raw bytes, etc.      |
+
+
+ifstream → READ
+ofstream → WRITE
+fstream  → READ + WRITE
+
+in      → read
+out     → write/overwrite
+app     → add at end
+ate     → initially at end
+trunc   → clear old data
+binary  → binary data
+
+tellg → get/read position
+tellp → put/write position
+seekg → move/read
+seekp → move/write
+
+
+
+ios::binary is used to read/write data as raw bytes without text-mode conversions.
+Binary file handling can be faster because it avoids converting data between binary and text formats, especially for large amounts of structured data.
+
+
+
+Read only
+    ↓
+ifstream
+ios::in
+
+Write / overwrite
+    ↓
+ofstream
+ios::out
+
+Add data
+    ↓
+ofstream
+ios::app
+
+Read + Write
+    ↓
+fstream
+ios::in | ios::out
+
+Start pointer at end
+    ↓
+ios::ate
+
+Clear old content
+    ↓
+ios::trunc
+
+Raw / non-text data
+    ↓
+ios::binary
+
+
+
+C++ File Handling — Quick Cheat Sheet
+
+📌 File Classes
+Class	Purpose
+ifstream	Read from file
+ofstream	Write to file
+fstream	Read + Write
+
+
+📌 File Opening Modes
+
+Mode	Meaning	Remember
+
+ios::in	Read	📖 Input
+ios::out	Write	✍️ Output
+ios::app	Write at end	➕ Append
+ios::ate	Start pointer at end	📍 At End initially
+ios::trunc	Erase old contents	🗑️ Truncate
+ios::binary	Binary/raw bytes	💾 Binary
+
